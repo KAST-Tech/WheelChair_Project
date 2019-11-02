@@ -1,0 +1,13 @@
+// Equipment List
+01. Arduino UNO
+02. Motor Driver (Model:L298)
+03. Bluetooth Module (Model:HC-05)
+04. Ultrasonic Sensor (Model:HC SR04)
+05. DC Motor
+06. Lipo Battery
+07. Breadboard
+08. LED
+09. Jumper Wire
+    a. Male to Male 
+    b. Male to Female
+    c. Female to female
