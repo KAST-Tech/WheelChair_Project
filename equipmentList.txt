@@ -11,3 +11,6 @@
     a. Male to Male 
     b. Male to Female
     c. Female to female
+10. Push Button
+11. Switch(ON/OFF)
+12. Buzzer

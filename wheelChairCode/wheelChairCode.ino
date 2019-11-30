@@ -1,13 +1,13 @@
 int motorRightA = 8;    //Right Motor-clockwise
 int motorRightB = 9;   //Right Motor-anticlockwise
-int motorLeftA = 11;    //Left Motor-clockwise
-int motorLeftB = 10;    //Left Motor-clockwise
-int trigPin1 = 12;       // Trig Pin
-int echoPin1 = 13;       // Echo Pin
+int motorLeftA = 11;   //Left Motor-clockwise
+int motorLeftB = 10;   //Left Motor-clockwise
+int trigPin1 = 12;     // Trig Pin
+int echoPin1 = 13;     // Echo Pin
 int light = 5;
 long duration1;
 int distance1;
-char bt = 0;       //Bluetooth Control
+char bt = 0;            //Bluetooth Control
 int trigPin2 = 7;       // Trig Pin
 int echoPin2 = 6;       // Echo Pin
 long duration2;
@@ -36,7 +36,7 @@ void loop()
   //Panic Button
   panicSound();
 
-  //  Right US
+  //  Right
   digitalWrite(trigPin1, LOW);
   delayMicroseconds(2);
   // Sets the trigPin on HIGH state for 10 micro seconds
@@ -51,8 +51,7 @@ void loop()
   Serial.print("Distance: ");
   Serial.println(distance1);
 
-  // Left US
-
+  // Left 
   digitalWrite(trigPin2, LOW);
   delayMicroseconds(2);
   // Sets the trigPin on HIGH state for 10 micro seconds
@@ -66,8 +65,6 @@ void loop()
   // Prints the distance on the Serial Monitor
   Serial.print("Distance: ");
   Serial.println(distance2);
-
-
 
   if (distance1 <= 20 || distance2 <= 20) {
     //Stop Wheel Chair
